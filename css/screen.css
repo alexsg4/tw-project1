@@ -93,9 +93,7 @@ header .icon {
 .nav-link-cont:hover .dropdown-content {
     background-color: #ddd;
     color: black;
-    display: block;
 }
-
 
 @media screen and (max-width: 768px) {
     .navbar {
