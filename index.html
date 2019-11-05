@@ -1,40 +1,67 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title> agstanciu - TW - proj. 1 </title>
 
+        <!--Icon-->
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="img/favicon.ico" type="image/x-icon">   
-        
-        <link href="https://fonts.googleapis.com/css?family=Raleway:900|Roboto:300,400,500&display=swap" rel="stylesheet">
-        
+               
+        <!--Styles-->
         <link href="css/screen.css" rel="stylesheet" type="text/css" media="screen">
         <link href="css/print.css" rel="stylesheet" type="text/css" media="print">
+
+        <!--Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:900|Roboto:300,400,500&display=swap" rel="stylesheet">
+
+        <!--Scripts-->
+        <script src="js/scripts.js"></script>
 
     </head>
 
     <body>
         <header> 
-            <nav>
-                <h3> Ford Prefect Photography </h3>
-                <a href="#Home"> Home </a>
-                <div class = "Dropdown">
-                    <button class = "DropBtn"> 
-                        Photos
-                    </button>
-                    <div class = "DropContent">
-                        <a href="#PP"> People &amp; Portraits </a> 
-                        <a href="#Landscapes"> Landscapes </a>
-                        <a href="#Street"> Street </a>
+            <div class = "logo-title">
+                <a href="#Home"> 
+                    Ford Prefect Photography
+                </a>
+            </div>
+            
+            <nav class = "navbar">
+                <div class="nav-link-cont">
+                    <a class="nav-link" href="#Home"> Home </a>
+                </div>
+                <div class="nav-link-cont">
+                    <a class="nav-link" href="#"> Photos </a>
+                    <div class = "dropdown-content">
+                        <div class="nav-link-cont">
+                            <a class="nav-link" href="#PP"> People &amp; Portraits </a> 
+                        </div>
+                        <div class="nav-link-cont">
+                            <a class="nav-link" href="#Landscapes"> Landscapes </a>
+                        </div>
+                        <div class="nav-link-cont">
+                            <a class="nav-link" href="#Street"> Street </a>
+                        </div>
                     </div>
                 </div>
-                <a href="#About"> About </a>
-                <a href="#Contact"> Contact </a>
+                <div class="nav-link-cont">
+                    <a class="nav-link" href="#Contact"> Contact </a>
+                </div>
+                <div class="nav-link-cont">
+                    <a class="nav-link" href="#About"> About </a>
+                </div>
+                <div class="nav-link-cont icon">
+                    <a href="javascript:void(0);" class="nav-link" onclick="toggleMobileNavbar()">&#9776;</a>
+                </div>
             </nav>
         </header>
 
         <footer>
-            <h3 id = "copyright info"> &copy; Copyright Alexandru Stanciu 2019 </h3>
+            <h3 class = "copyright info"> &copy; Copyright Alexandru Stanciu 2019 </h3>
         </footer>
     </body>
 </html>
