@@ -35,17 +35,17 @@
 
 .sectionPortrait
 {
-    background: url("/img/imgTest2.jpg");
+    background: url("../img/imgTest2.jpg");
 }
 
 .sectionLandscape
 {
-    background: url("/img/imgTest.jpg");
+    background: url("../img/imgTest.jpg");
 }
 
 .sectionAstro
 {
-    background: url("/img/imgTest3.jpg");
+    background: url("../img/imgTest3.jpg");
 }
 
 .imgBox > .sectionInfo{
