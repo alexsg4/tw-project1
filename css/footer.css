@@ -1,0 +1,28 @@
+footer{
+
+    height: 10%;
+    min-height: 10%;
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    
+    margin: 0;
+    padding: 10px;
+    background: darkgrey;
+
+    border: 1px solid red;
+}
+
+footer #footerContainer{
+    margin: auto;
+    padding: 0;
+}
+
+footer #footerContainer #footerText{
+    padding: 0;
+    display: block;
+    font-size: 16pt;
+    color: red;
+}

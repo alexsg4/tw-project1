@@ -1,0 +1,103 @@
+#showcase{
+    background: #979797;
+    padding: 0;
+    margin: 0;
+
+    height: 90%;
+}
+
+#showcaseContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+
+    height: inherit;
+    background: darkgreen;
+
+    border: 1px solid red;
+}
+
+#showcaseContainer .imgBox{
+    position: relative;
+    margin: 10px;
+    padding: 0;
+    min-height: 10em;
+    min-width: 500px;
+    border: 1px solid red;
+
+    background-position: center;
+    background-size: cover;
+    width: 25%;
+    height: 30em;
+}
+
+.sectionPortrait
+{
+    background: url("/img/imgTest2.jpg");
+}
+
+.sectionLandscape
+{
+    background: url("/img/imgTest.jpg");
+}
+
+.sectionAstro
+{
+    background: url("/img/imgTest3.jpg");
+}
+
+.imgBox > .sectionInfo{
+    position: relative;
+    top: 60%;
+    text-align: center;
+
+    height: 40%;
+    padding-top: 10%;
+    background: #afafaf5b;
+    color: white;
+}
+
+.sectionInfo .sectionTitle{
+    display: table;
+    color: white;
+    font-size: 16pt;
+    font-weight: bold;
+    padding: 0;
+    margin: 0 auto;
+
+    transition: 500ms ease;
+    border-bottom: 2px solid transparent;
+}
+
+.imgBox > .overlay
+{
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+
+    background: white;
+    opacity: 0;
+    transition: 600ms ease;
+}
+
+.imgBox:hover .sectionTitle{
+    border-color: white;
+}
+
+.imgBox:hover .overlay{
+    opacity: 0.33;
+}
+
+
+.sectionInfo > p{
+    display: block;
+    overflow: auto;
+    font-size: 11pt;
+    text-align: left;
+    padding: 20px;
+    text-justify: newspaper;
+}
