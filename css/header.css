@@ -1,7 +1,7 @@
 
 header{
     background-color: #333;
-    height: 55px;
+    height: 60px;
 }
 
 .navbar
@@ -89,15 +89,15 @@ header .icon {
 
 @media screen and (max-width: 768px) {
     .navbar {
-        width: 100%;
-        max-height: 0em;
+        min-width: 100%;
+        display:none;
         background: black;
         color: white;
         overflow: hidden;
     }
 
     .navbar.mobile {
-        max-height: 100em;
+        display: block;
         overflow: initial;
     }
 
