@@ -1,18 +1,32 @@
-function toggleMobileNavbar() {
-  var x = document.getElementsByClassName("navbar")[0];
-  if (x.className === "navbar") {
-    x.className += " mobile";
-  } else {
-    x.className = "navbar";
+window.addEventListener('resize', onWindowResize);
+
+function onWindowResize(){
+  var navbar = document.getElementById('navbar');
+  if(typeof(navbar) === 'undefined'){
+    console.warn('Could not find navbar');
+    return;
+  }
+  var wasHidden = Boolean(navbar.className.indexOf('hidden') !== -1);
+  console.log("wasHidden: ", wasHidden);
+  if(window.innerWidth < 600){
+    if(wasHidden === false){
+      navbar.className += ' hidden';
+    }
+  }else if(wasHidden === true){
+    navbar.className = navbar.className.replace('hidden', '');
   }
 }
 
-function toggleDropdown(elem) {
-  var dropdownContent = elem.getElementsByClassName("dropdown-content")[0];
-  var displayType = dropdownContent.style.display;
-  if(displayType === "none"){
-    dropdownContent.style.display = "block";
-  } else {
-    dropdownContent.style.display = "none";
+function toggleNavbar(){
+  var navbar = document.getElementById('navbar');
+  if(typeof(navbar) === 'undefined'){
+    console.warn('Could not find navbar');
+    return;
+  }
+  var isHidden = Boolean(navbar.className.indexOf('hidden') !== -1);
+  if(isHidden){
+    navbar.className = navbar.className.replace('hidden', '');
+  } else{
+    navbar.className += 'hidden';
   }
 }

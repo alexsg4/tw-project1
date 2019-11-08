@@ -29,36 +29,25 @@
 
     <body>
         <header> 
-            <div class = "logo-title">
+            <div class = "header-item" id = "logo-title">
                 <a href="#Photos"> 
-                    Ford Prefect Photography
+                    F.P. Photo
                 </a>
             </div>
             
-            <nav class = "navbar">
-                <div class="nav-link-cont" onclick="toggleDropdown(this)">
-                    <a class="nav-link" href="#"> Photos </a>
-                    <div class = "dropdown-content">
-                        <div class="nav-link-cont">
-                            <a class="nav-link" href="#PP"> People &amp; Portraits </a> 
-                        </div>
-                        <div class="nav-link-cont">
-                            <a class="nav-link" href="#Landscapes"> Landscapes </a>
-                        </div>
-                        <div class="nav-link-cont">
-                            <a class="nav-link" href="#Street"> Street </a>
-                        </div>
-                    </div>
+            <nav class = "header-item" id = "navbar">
+                <div class="nav-item">
+                    <a class="nav-link" href="#"> Work </a>
                 </div>
-                <div class="nav-link-cont">
+                <div class="nav-item">
                     <a class="nav-link" href="#Contact"> Contact </a>
                 </div>
-                <div class="nav-link-cont">
+                <div class="nav-item">
                     <a class="nav-link" href="#About"> About </a>
                 </div>
             </nav>
-            <div class="nav-link-cont icon">
-                <a href="javascript:void(0);" class="nav-link" onclick="toggleMobileNavbar()">&#9776;</a>
+            <div class="header-item" id = "toggleNavbarIcon">
+                <a href="javascript:void(0);" class="nav-link" onclick="toggleNavbar()">&#9776;</a>
             </div>
         </header>
 

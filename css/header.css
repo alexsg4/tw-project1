@@ -1,123 +1,118 @@
-
-header{
-    background-color: #333;
-    height: 60px;
+:root{
+    --header-color: #d3d3d3;
 }
 
-.navbar
-{
+#navbar.hidden{
+    display: none;
     position: relative;
-    float: right;
-    height: inherit;
+}
 
+header{
+    position: relative;
+    height: 60px;
     z-index: 999;
 }
 
-.navbar .nav-link-cont{
+header > .header-item{
+    float: left;
     position: relative;
-    float:left;
-    margin: 0;
-    padding: 20px;
     height: inherit;
+    z-index: 999;
 }
 
-.nav-link-cont .nav-link{
+header > #logo-title{
+    padding: 10px 0px 0px 12px;
+}
+
+header > #logo-title > a{
+    position: relative;
+    float: left;
+    height: inherit;
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+header > #toggleNavbarIcon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 10px;
+}
+
+#toggleNavbarIcon > a{
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+#navbar
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    float: none;
+
+    position: absolute;
+    top: 60px;
+    height: fit-content;
+    width: 100%;
+    color: black;
+    background: var(--header-color);
+}
+
+#navbar > .nav-item{
+    position: relative;
+    float: left;
+    height: inherit;
+
+    min-width: 100%;
+    padding: 20px;
+
+    color: black;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 40px;
+    transition: 0.4s ease;
+}
+
+.nav-item > .nav-link{
     padding: 0;
     margin: 0;
-    color: #f2f2f2;
+    color: black;
+    font-weight: bold;
     text-align: center;
     text-decoration: none;
 }
 
-.logo-title{
-    float:left;
-    height: inherit;
-    padding: 0;
+#navbar > .nav-item:hover {
+    border-color: white;
 }
 
-.logo-title > a{
-    display: block;
-    margin: auto;
-    padding: 10px;
-
-    text-decoration: none;
-    font-size: 16pt;
-    font-family: sans-serif;
+#navbar > .nav-item:hover > a {
     color: white;
 }
 
-header .icon {
-    display: none;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 55px;
-    left: 0px;
-    min-width: 160px;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-
-    border: 1px solid red;
-}
-
-.dropdown-content .nav-link-cont{
-    width: 100%;
-}
-
-.dropdown-content .nav-link {
-    float: none;
-    color: black;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    width: 100%;
-}
-
-.navbar .nav-link-cont:hover {
-    background-color: #555;
-    color: white;
-    transition: 0.4s;
-}
-
-.nav-link-cont:hover .dropdown-content {
-    background-color: #ddd;
-    color: black;
-}
-
-@media screen and (max-width: 768px) {
-    .navbar {
-        min-width: 100%;
-        display:none;
-        background: black;
-        color: white;
-        overflow: hidden;
-    }
-
-    .navbar.mobile {
+/* for tablets and up */
+@media only screen and (min-width: 600px) {
+    #navbar {
+        position: static;
         display: block;
-        overflow: initial;
-    }
-
-    .navbar > .nav-link-cont{
-        background: black;
-        color:white;
-        width: 100%;
-    }
-
-    .navbar .dropdown-content{
-        width: 100%;
-    }
-
-    header .icon {
         float: right;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-        padding: 10px;
-        font-size: 1.5em;
+        height: inherit;
+        width: initial;
+    }
+
+    #navbar > .nav-item{
+        min-width: initial;
+    }
+
+    header > #toggleNavbarIcon {
+        display: none;
+        position: relative;
     }
 }
