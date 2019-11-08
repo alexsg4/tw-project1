@@ -15,6 +15,7 @@
         'section3';
 }
 
+/* for tablets and up */
 @media only screen and (min-width: 600px) {
     #showcaseContainer{
         grid-template-areas: 
@@ -30,7 +31,6 @@
 #showcaseContainer > .imgBox {
     position: relative;
     min-height: 500px;
-    border: 1px solid red;
 
     background-position: center;
     background-size: cover, 500px auto;
