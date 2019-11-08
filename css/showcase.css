@@ -30,7 +30,6 @@
 #showcaseContainer > .imgBox {
     position: relative;
     min-height: 500px;
-    border: 1px solid red;
 
     background-position: center;
     background-size: cover, 500px auto;
