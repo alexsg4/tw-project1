@@ -1,107 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-        <title> agstanciu - TW - proj. 1 </title>
-
-        <!--Icon-->
-        <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-        <link rel="icon" href="../img/favicon.ico" type="image/x-icon">   
-               
-        <!--Styles-->
-        <link href="css/screen.css" rel="stylesheet" type="text/css" media="screen">
-        <link href="css/print.css" rel="stylesheet" type="text/css" media="print">
-        <link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet" crossorigin="anonymous">
-
-        <link href="css/header.css" rel="stylesheet" type="text/css">
-        <link href="css/footer.css" rel="stylesheet" type="text/css">
-
-        <link href="css/showcase.css" rel="stylesheet" type="text/css">
-
-        <!--Fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:900|Roboto:300,400,500&display=swap" rel="stylesheet">
-
-        <!--Scripts-->
-        <script src="js/scripts.js"></script>
-
-    </head>
-
-    <body>
-        <header> 
-            <div class = "header-item" id = "logo-title">
-                <a href="#Photos"> 
-                    F.P. Photo
-                </a>
+---
+    layout: default
+    title: main-page
+    custom_css: showcase
+---
+<section id = "showcase">
+    <div id = "showcaseContainer">
+        <div class = "imgBox sectionPortrait">
+            <div class="sectionInfo">
+                <h3 class="sectionTitle">Portraits</h3>
             </div>
-            
-            <nav class = "header-item" id = "navbar">
-                <div class="nav-item" id="dropdown" onclick="toggleDropdown()">
-                    <span class="nav-link"> Work </span>
-                    <div id = "dropdown-content">
-                        <div class="nav-item">
-                            <a class="nav-link" href="#PP"> Portraits </a> 
-                        </div>
-                        <div class="nav-item">
-                            <a class="nav-link" href="#Landscapes"> Landscapes </a>
-                        </div>
-                        <div class="nav-item">
-                            <a class="nav-link" href="#Astro"> Astro </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#Contact"> Contact </a>
-                </div>
-                <div class="nav-item">
-                    <a class="nav-link" href="#About"> About </a>
-                </div>
-            </nav>
-            <div class="header-item" id = "toggleNavbarIcon">
-                <a href="javascript:void(0);" class="nav-link" onclick="toggleNavbar()">&#9776;</a>
+            <a class = "overlay" href="https://unsplash.com/"></a>
+        </div>
+
+        <div class = "imgBox sectionAstro">
+            <div class="sectionInfo">
+                <h3 class="sectionTitle">Astro</h3>
             </div>
-        </header>
+            <a class = "overlay" href="https://unsplash.com/"></a>
+        </div>
 
-        <section id = "showcase">
-            <div id = "showcaseContainer">
-                <div class = "imgBox sectionPortrait">
-                    <div class="sectionInfo">
-                        <h3 class="sectionTitle">Portraits</h3>
-                    </div>
-                    <a class = "overlay" href="https://unsplash.com/"></a>
-                </div>
-
-                <div class = "imgBox sectionAstro">
-                    <div class="sectionInfo">
-                        <h3 class="sectionTitle">Astro</h3>
-                    </div>
-                    <a class = "overlay" href="https://unsplash.com/"></a>
-                </div>
-
-                <div class = "imgBox sectionLandscape">
-                    <div class="sectionInfo">
-                        <h3 class="sectionTitle">Landscapes</h3>
-                    </div>
-                    <a class = "overlay" href="https://unsplash.com/"></a>
-                </div>
+        <div class = "imgBox sectionLandscape">
+            <div class="sectionInfo">
+                <h3 class="sectionTitle">Landscapes</h3>
             </div>
-        </section>
-
-        <footer>
-            <h3 class="footerText" id="copyText"> &copy; Copyright Alexandru Stanciu 2019 </h3> 
-            <ul id="footerIconList">
-                <li><a target="_blank" href="https://www.instagram.com/alexsovrxpsd/">
-                    <i class="im im-instagram"></i>
-                </a></li>
-                <li><a target="_blank"  href="https://github.com/alexsg4/twportfolio">
-                    <i class="im im-github"></i>
-                </a></li>
-                <li><a target="_blank" href="https://laborator-fmi-web.educationhost.cloud/pages/ProiectHML.html">
-                    <i class="im im-code"></i>
-                </a></li>
-            </ul>
-            <h3 class="footerText" id="labText"> Tehnici Web </h3>
-        </footer>
-    </body>
-</html>
+            <a class = "overlay" href="https://unsplash.com/"></a>
+        </div>
+    </div>
+</section>
