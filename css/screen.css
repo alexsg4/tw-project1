@@ -8,6 +8,11 @@ html{
     padding: 0;
 }
 
+:root{
+    --header-color: #d3d3d3;
+}
+
+
 body {
     display: grid;
     grid-template-rows: 1fr auto;
@@ -20,5 +25,5 @@ body {
     /* TODO set font family, colors and so on */
     font-family: sans-serif;
 
-    background: #d3d3d3;
+    background: var(--header-color);
 }

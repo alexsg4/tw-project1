@@ -37,8 +37,19 @@
             </div>
             
             <nav class = "header-item" id = "navbar">
-                <div class="nav-item">
-                    <a class="nav-link" href="#"> Work </a>
+                <div class="nav-item" id="dropdown" onclick="toggleDropdown()">
+                    <span class="nav-link"> Work </span>
+                    <div id = "dropdown-content">
+                        <div class="nav-item">
+                            <a class="nav-link" href="#PP"> Portraits </a> 
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link" href="#Landscapes"> Landscapes </a>
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link" href="#Astro"> Astro </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="nav-item">
                     <a class="nav-link" href="#Contact"> Contact </a>
