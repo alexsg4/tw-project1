@@ -1,28 +1,52 @@
 footer{
+    min-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
 
-    height: 10%;
-    min-height: 10%;
-    width: 100%;
-    position: relative;
-    left: 0;
-    bottom: 0;
     text-align: center;
-    
+    align-items: center;
+
     margin: 0;
-    padding: 10px;
-    background: darkgrey;
+    padding: 0;
+    background: #4b4b4b;
 
-    border: 1px solid red;
 }
 
-footer #footerContainer{
-    margin: auto;
-    padding: 0;
-}
-
-footer #footerContainer #footerText{
-    padding: 0;
+footer .footerText{
     display: block;
-    font-size: 16pt;
-    color: red;
+    width: 100%;
+    font-size: 0.7em;
+    color: white;
+
+    grid-column: span 1;
+    text-align: left;
+    padding: 0px 0px 0px 20px;
+}
+
+footer #labText{
+    text-align: right;
+    padding-right: 20px;
+}
+
+footer > #footerIconList{
+    grid-column: span 1;
+    list-style-type: none;
+    margin: auto;
+}
+
+footer > #footerIconList > li{
+    margin: 0.25em 1em;
+    width: 20px;
+    height: 20px;
+    float: left;
+} 
+
+#footerIconList > li > a{
+    color: white;
+    transition: 500ms ease;
+}
+
+#footerIconList > li > a:hover{
+    opacity: 0.5;
 }
