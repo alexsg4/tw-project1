@@ -13,6 +13,7 @@
         <!--Styles-->
         <link href="css/screen.css" rel="stylesheet" type="text/css" media="screen">
         <link href="css/print.css" rel="stylesheet" type="text/css" media="print">
+        <link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet" crossorigin="anonymous">
 
         <link href="css/header.css" rel="stylesheet" type="text/css">
         <link href="css/footer.css" rel="stylesheet" type="text/css">
@@ -29,72 +30,44 @@
 
     <body>
         <header> 
-            <div class = "logo-title">
-                <a href="#Home"> 
-                    Ford Prefect Photography
+            <div class = "header-item" id = "logo-title">
+                <a href="#Photos"> 
+                    F.P. Photo
                 </a>
             </div>
             
-            <nav class = "navbar">
-                <div class="nav-link-cont">
-                    <a class="nav-link" href="#Home"> Home </a>
-                </div>
-                <div class="nav-link-cont" onclick="toggleDropdown(this)">
-                    <a class="nav-link" href="#"> Photos </a>
-                    <div class = "dropdown-content">
-                        <div class="nav-link-cont">
-                            <a class="nav-link" href="#PP"> People &amp; Portraits </a> 
+            <nav class = "header-item" id = "navbar">
+                <div class="nav-item" id="dropdown" onclick="toggleDropdown()">
+                    <span class="nav-link"> Work </span>
+                    <div id = "dropdown-content">
+                        <div class="nav-item">
+                            <a class="nav-link" href="#PP"> Portraits </a> 
                         </div>
-                        <div class="nav-link-cont">
+                        <div class="nav-item">
                             <a class="nav-link" href="#Landscapes"> Landscapes </a>
                         </div>
-                        <div class="nav-link-cont">
-                            <a class="nav-link" href="#Street"> Street </a>
+                        <div class="nav-item">
+                            <a class="nav-link" href="#Astro"> Astro </a>
                         </div>
                     </div>
                 </div>
-                <div class="nav-link-cont">
+                <div class="nav-item">
                     <a class="nav-link" href="#Contact"> Contact </a>
                 </div>
-                <div class="nav-link-cont">
+                <div class="nav-item">
                     <a class="nav-link" href="#About"> About </a>
                 </div>
             </nav>
-            <div class="nav-link-cont icon">
-                <a href="javascript:void(0);" class="nav-link" onclick="toggleMobileNavbar()">&#9776;</a>
+            <div class="header-item" id = "toggleNavbarIcon">
+                <a href="javascript:void(0);" class="nav-link" onclick="toggleNavbar()">&#9776;</a>
             </div>
         </header>
 
         <section id = "showcase">
             <div id = "showcaseContainer">
-                <div class = "imgBox sectionLandscape">
-                    <div class="sectionInfo">
-                        <h3 class="sectionTitle">Landscapes</h3>
-                        <p>
-                            Lorem ipsum amet dolor
-                            Lorem ipsum amet dolor
-                            Lorem ipsum amet dolor
-                            Lorem ipsum amet dolor
-                            Lorem ipsum amet dolor
-                            Lorem ipsum amet dolor
-                            Lorem ipsum amet dolor
-                        </p>
-                    </div>
-                    <a class = "overlay" href="https://unsplash.com/"></a>
-                </div>
-
                 <div class = "imgBox sectionPortrait">
                     <div class="sectionInfo">
                         <h3 class="sectionTitle">Portraits</h3>
-                        <p>
-                            Lorem ipsum amet dolor
-                            Lorem ipsum amet dolor
-                            Lorem ipsum amet dolor
-                            Lorem ipsum amet dolor
-                            Lorem ipsum amet dolor
-                            Lorem ipsum amet dolor
-                            Lorem ipsum amet dolor
-                        </p>
                     </div>
                     <a class = "overlay" href="https://unsplash.com/"></a>
                 </div>
@@ -102,26 +75,33 @@
                 <div class = "imgBox sectionAstro">
                     <div class="sectionInfo">
                         <h3 class="sectionTitle">Astro</h3>
-                        <p>
-                            Lorem ipsum amet dolor
-                            Lorem ipsum amet dolor
-                            Lorem ipsum amet dolor
-                            Lorem ipsum amet dolor
-                            Lorem ipsum amet dolor
-                            Lorem ipsum amet dolor
-                            Lorem ipsum amet dolor
-                        </p>
                     </div>
                     <a class = "overlay" href="https://unsplash.com/"></a>
                 </div>
-                
+
+                <div class = "imgBox sectionLandscape">
+                    <div class="sectionInfo">
+                        <h3 class="sectionTitle">Landscapes</h3>
+                    </div>
+                    <a class = "overlay" href="https://unsplash.com/"></a>
+                </div>
             </div>
         </section>
 
         <footer>
-            <div id="footerContainer">
-                <h3 class = "footerItem" id="footerText"> &copy; Copyright Alexandru Stanciu 2019 </h3>
-            </div>
+            <h3 class="footerText" id="copyText"> &copy; Copyright Alexandru Stanciu 2019 </h3> 
+            <ul id="footerIconList">
+                <li><a target="_blank" href="https://www.instagram.com/alexsovrxpsd/">
+                    <i class="im im-instagram"></i>
+                </a></li>
+                <li><a target="_blank"  href="https://github.com/alexsg4/twportfolio">
+                    <i class="im im-github"></i>
+                </a></li>
+                <li><a target="_blank" href="https://laborator-fmi-web.educationhost.cloud/pages/ProiectHML.html">
+                    <i class="im im-code"></i>
+                </a></li>
+            </ul>
+            <h3 class="footerText" id="labText"> Tehnici Web </h3>
         </footer>
     </body>
 </html>
