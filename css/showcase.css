@@ -48,13 +48,13 @@
 
 .sectionLandscape
 {
-    background: url("../img/imgTest.jpg");
+    background: url("../img/scapes/scape-1.jpg");
     grid-area: 'section2';
 }
 
 .sectionAstro
 {
-    background: url("../img/imgTest3.jpg");
+    background: url("../img/astro/astro-6.jpg");
     grid-area: 'section3';
 }
 
