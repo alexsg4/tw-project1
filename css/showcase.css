@@ -42,7 +42,7 @@
 
 .sectionPortrait
 {
-    background: url("../img/imgTest2.jpg");
+    background: url("../img/portrait/portrait-3.jpg");
     grid-area: 'section1';
 }
 
