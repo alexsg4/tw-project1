@@ -1,0 +1,31 @@
+.gallery {
+    padding: 1em;
+    margin: 0;
+    position: relative;
+}
+
+.gallery > h1 {
+    font-size: 3rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    margin-bottom: 1rem;
+    margin-top: 0;
+    color: #333333;
+    font-weight: 100;
+}
+
+.gallery > .gallery_list > li > figure {
+    height: 100%;
+    position: relative;
+}
+
+.gallery > .gallery_list > li > figure > figcaption {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.gallery > .gallery_list > li > figure > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
