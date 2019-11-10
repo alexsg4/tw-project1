@@ -1,16 +1,16 @@
 footer{
-    min-height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
 
-    text-align: center;
     align-items: center;
+    justify-items: center;
 
     margin: 0;
     padding: 0;
     background: #4b4b4b;
 
+    font-size: 1.75 vh;
 }
 
 footer .footerText{
@@ -19,7 +19,6 @@ footer .footerText{
     font-size: 0.7em;
     color: white;
 
-    grid-column: span 1;
     text-align: left;
     padding: 0px 0px 0px 20px;
 }
@@ -30,23 +29,22 @@ footer #labText{
 }
 
 footer > #footerIconList{
-    grid-column: span 1;
-    list-style-type: none;
-    margin: auto;
+    margin: 0 auto;
 }
 
-footer > #footerIconList > li{
-    margin: 0.25em 1em;
-    width: 20px;
-    height: 20px;
-    float: left;
+footer > #footerIconList td{
+    padding: 0.35em 0.75em;
 } 
 
-#footerIconList > li > a{
+footer > #footerIconList .im{
+    font-size: 1.75vh;
+} 
+
+#footerIconList a{
     color: white;
     transition: 500ms ease;
 }
 
-#footerIconList > li > a:hover{
+#footerIconList a:hover{
     opacity: 0.5;
 }
