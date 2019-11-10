@@ -6,19 +6,13 @@
     flex: 1;
 }
 
-.container > h1 {
-    margin: 30px 0;
-    font-size: 5em;
-    line-height: 1;
-    letter-spacing: -1px;
-}
-
 .container > .frame-container{
     overflow: hidden;
     position: relative;
     padding-bottom: 56.25%;
     height: 0;
 
+    /* TODO test if necessary on firefox */
     flex: 1;
 }
 
