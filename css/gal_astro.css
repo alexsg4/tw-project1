@@ -1,29 +1,28 @@
 .gallery > .gallery_list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 0.75em 0em;
     grid-auto-flow: dense;
-
-    list-style: none;
 }
 
-.gallery > .gallery_list > li {
-    grid-column: span 2;
-    grid-row: span 1;
-}
+/* for tablets and up */
+@media only screen and (min-width: 600px) {
+    .gallery > .gallery_list {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        grid-template-rows: repeat(6, 300px);
+    }
 
-.gallery > .gallery_list > li:first-child {
-    grid-column: span 3;
-    grid-row: span 3;
-}
+    .gallery > .gallery_list > li {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
 
-.gallery > .gallery_list > li:nth-child(2n+1) {
-    grid-column: span 3;
-    grid-row: span 2;
-}
+    .gallery > .gallery_list > li:nth-child(2n) {
+        grid-column: span 2;
+        grid-row: span 2;
+    }
 
-.gallery > .gallery_list > li:nth-child(7) {
-    grid-column: span 3;
-    grid-row: span 1;
+    .gallery > .gallery_list > li:nth-child(3n + 1) {
+        grid-column: span 3 ;
+        grid-row: span 2;
+    }
 }
