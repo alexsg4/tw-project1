@@ -21,6 +21,7 @@
         grid-template-areas: 
         'section1 section2'
         'section3 section3';
+        height: 100vh;
     }
 
     #showcaseContainer > .imgBox:last-child {
