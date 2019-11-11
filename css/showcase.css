@@ -21,7 +21,8 @@
         grid-template-areas: 
         'section1 section2'
         'section3 section3';
-        height: 100vh;
+        /* kinda ugly but we'll subtract header and footer heights*/
+        height: calc(100vh - (60px + 2.5rem));
     }
 
     #showcaseContainer > .imgBox:last-child {
