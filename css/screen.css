@@ -3,7 +3,6 @@
 }
 
 html{
-    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -26,13 +25,19 @@ body {
     background: var(--header-color);
 }
 
-body > main{
+body > #page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+body > #page-container > main{  
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
 
-    min-height: 90vh;
+    min-height: inherit;
+    padding-bottom: 2.5rem;
 
     background: rgba(0, 0, 0, 0.25);
 }
