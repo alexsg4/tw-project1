@@ -41,19 +41,19 @@
 .sectionPortrait
 {
     background: url("../img/portrait/portrait-3.jpg");
-    grid-area: 'section1';
+    grid-area: section1;
 }
 
 .sectionLandscape
 {
     background: url("../img/scapes/scape-1.jpg");
-    grid-area: 'section2';
+    grid-area: section3;
 }
 
 .sectionAstro
 {
     background: url("../img/astro/astro-6.jpg");
-    grid-area: 'section3';
+    grid-area: section2;
 }
 
 .imgBox > .sectionInfo{
