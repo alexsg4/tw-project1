@@ -56,8 +56,15 @@ h2{
     font-weight: 300;
 }
 
+h3{
+    color: var(--heading-color);
+    font-size: 3vh;
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
 p{
-    text-justify: newspaper;
+    text-align: justify;
     text-align: left;
     color: var(--text-color);
     font-weight: 500;

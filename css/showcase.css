@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
 
-    min-height: 90vh;
+    flex: 1;
 }
 
 #showcaseContainer {
@@ -23,21 +23,19 @@
         'section3 section3';
     }
 
-    #showcaseContainer > .imgBox:nth-child(3n) {
+    #showcaseContainer > .imgBox:last-child {
         grid-column: span 2;
     }
 }
 
 #showcaseContainer > .imgBox {
     position: relative;
-    min-height: 500px;
+    min-height: 600px;
+    height: 100%;
 
     background-position: center;
-    background-size: cover, 500px auto;
+    background-size: cover;
     background-repeat: no-repeat;
-
-    grid-column: span 1;
-    grid-row: span 1;
 }
 
 .sectionPortrait
@@ -70,20 +68,20 @@
     color: white;
 
     transition: 500ms ease;
-    opacity: 0;
+    opacity: 0.2;
 }
 
 .sectionInfo .sectionTitle{ 
     display: table;
     position: absolute;
     bottom: 0;
-    right: 0;
+    right: 10px;
 
     margin: 0;
     color: white;
-    font-size: 50pt;
-    font-weight: bolder;
-    font-style: italic;
+    font-size: 10vw;
+    font-weight: 600;
+    letter-spacing: 3px;
 
     transition: 500ms ease;
 }
