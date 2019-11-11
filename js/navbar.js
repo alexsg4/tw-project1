@@ -1,5 +1,5 @@
 var TABLET_MIN_WIDTH = 600;
-window.addEventListener('resize', onWindowResize);
+window.addEventListener('resize', onWindowResizeOrLoad);
 
 function toggleVisibleOnResize(element)
 {
@@ -13,7 +13,7 @@ function toggleVisibleOnResize(element)
   }
 }
 
-function onWindowResize(){
+function onWindowResizeOrLoad(){
   var navbar = document.getElementById('navbar');
   if(typeof(navbar) === 'undefined'){
     console.warn('OnResize: could not find navbar');
