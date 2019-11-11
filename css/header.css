@@ -76,7 +76,6 @@ header > #toggleNavbarIcon {
 
 .nav-item > .nav-link{
     padding: 0;
-    margin: 10px 0px 0px 12px;
     color: black;
     font-weight: bold;
     text-align: center;
@@ -152,12 +151,12 @@ header > #toggleNavbarIcon {
         position: absolute;
         top: 60px;
         left: 0;
-        width: fit-content;
+        width: 100%;
         background: #0000006c;
     }
 
     #navbar > .nav-item:hover > #dropdown-content{
-        display: block;
+        display: table;
     }
 
     #navbar > .nav-item > #dropdown-content > .nav-item > a{
