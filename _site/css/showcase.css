@@ -1,0 +1,112 @@
+#showcase{
+    background: #979797;
+    padding: 0;
+    margin: 0;
+
+    flex: 1;
+}
+
+#showcaseContainer {
+    display: grid;
+    gap: 0.05rem;
+    grid-template-areas: 
+        'section1'
+        'section2'
+        'section3';
+}
+
+/* for tablets and up */
+@media only screen and (min-width: 600px) {
+    #showcaseContainer{
+        grid-template-areas: 
+        'section1 section2'
+        'section3 section3';
+    }
+
+    #showcaseContainer > .imgBox:last-child {
+        grid-column: span 2;
+    }
+}
+
+#showcaseContainer > .imgBox {
+    position: relative;
+    min-height: 600px;
+    height: 100%;
+
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.sectionPortrait
+{
+    background: url("../img/portrait/portrait-3.jpg");
+    grid-area: 'section1';
+}
+
+.sectionLandscape
+{
+    background: url("../img/scapes/scape-1.jpg");
+    grid-area: 'section2';
+}
+
+.sectionAstro
+{
+    background: url("../img/astro/astro-6.jpg");
+    grid-area: 'section3';
+}
+
+.imgBox > .sectionInfo{
+    position: absolute;
+    bottom: 0;
+
+    padding: 0.1rem;
+    margin: 0;
+
+    height: 40%;
+    width: 100%;
+    color: white;
+
+    transition: 500ms ease;
+    opacity: 0.2;
+}
+
+.sectionInfo .sectionTitle{ 
+    display: table;
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+
+    margin: 0;
+    color: white;
+    font-size: 10vw;
+    font-weight: 600;
+    letter-spacing: 3px;
+
+    transition: 500ms ease;
+}
+
+.imgBox > .overlay
+{
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+
+    background: white;
+    opacity: 0;
+    transition: 600ms ease;
+}
+
+.imgBox:hover > .sectionInfo {
+    opacity: 0.8;
+}
+
+.imgBox:hover .sectionTitle{
+    transform: translate(-20px, -10px);
+}
+
+.imgBox:hover .overlay{
+    opacity: 0.33;
+}

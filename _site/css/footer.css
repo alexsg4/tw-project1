@@ -1,0 +1,66 @@
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+
+    align-items: center;
+    justify-items: center;
+
+    background: #4b4b4b;
+    border-top: 0.25em solid #ce5050;
+}
+
+footer .footerText{
+    display: block;
+    margin: 0;
+    color: white;
+    font-size: 1.25vw;
+    font-weight: 500;
+    justify-self: start;
+
+    margin-left: 0.5em;
+
+}
+
+footer #labText{
+    justify-self: end;
+    margin-right: 0.5em;
+    margin-left: 0;
+}
+
+footer > #footerIconList td{
+    justify-self: center;
+} 
+
+footer > #footerIconList td{
+    padding: 0 0.75em;
+} 
+
+footer > #footerIconList .im{
+    font-size: 0.65em;
+} 
+
+#footerIconList a{
+    color: white;
+    transition: 500ms ease;
+}
+
+#footerIconList a:hover{
+    opacity: 0.5;
+}
+
+/* for tablets and up */
+@media only screen and (min-width: 600px) {    
+    footer > #footerIconList .im{
+        font-size: 1.25em;
+    }
+
+    footer .footerText{
+        font-size: 0.75vw;
+    }
+}

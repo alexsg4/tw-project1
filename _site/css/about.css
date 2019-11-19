@@ -1,0 +1,21 @@
+.container {
+    padding: 1em 25%;
+    text-align: center;
+
+    flex: 1;
+}
+
+.container > p{
+    display: block;
+    margin-bottom: 0;
+    min-width: 0.6vw;
+    overflow: auto;
+}
+
+.container > audio{
+    position: relative;
+    display: block;
+    margin: 1em auto;
+    max-width: 50vw;
+    min-width: 30vw;
+}

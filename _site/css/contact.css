@@ -1,0 +1,26 @@
+.container {
+    padding: 0.5em;
+    text-align: center;
+    width: 100%;
+
+    flex: 1;
+}
+
+.container > .frame-container{
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+
+    /* TODO test if necessary on firefox */
+    flex: 1;
+}
+
+.iframe-container > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 0;
+}

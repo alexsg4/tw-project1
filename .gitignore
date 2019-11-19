@@ -1,4 +1,5 @@
-_site
+# Temporarily allow _site for presentation
+# _site
 .sass-cache
 .jekyll-metadata
 img/orig

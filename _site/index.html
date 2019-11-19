@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>main-page</title>
+
+        <!--Icon-->
+        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">   
+               
+        <!--Styles-->
+        <link href="css/screen.css" rel="stylesheet" type="text/css" media="screen">
+        <link href="css/print.css" rel="stylesheet" type="text/css" media="print">
+
+        <link href="css/header.css" rel="stylesheet" type="text/css">
+        <link href="css/footer.css" rel="stylesheet" type="text/css">
+
+        <!--Fonts-->
+        <link href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css" rel="stylesheet" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:900%7CRoboto:300,400,500&display=swap" rel="stylesheet">
+
+        <!--Scripts-->
+        <script src='js/navbar.js'></script>
+
+        
+            
+        <link rel="stylesheet" href="css/showcase.css" media="screen" type="text/css">
+            
+        
+
+        
+
+    </head>
+
+    <body onload = "onWindowResizeOrLoad()">
+        <div id="page-container">
+            <header> 
+                <div class = "header-item" id = "logo-title">
+                    <a href="index.html"> 
+                        F.P. Photo
+                    </a>
+                </div>
+                
+                <nav class = "header-item" id = "navbar">
+                    <div class="nav-item">
+                        <a class="nav-link" href="index.html"> Home </a>
+                    </div>
+                    <div class="nav-item" id="dropdown" onclick="toggleDropdown()">
+                        <span class="nav-link"> Work </span>
+                        <div id = "dropdown-content">
+                            <div class="nav-item">
+                                <a class="nav-link" href="gal_portrait.html"> Portraits </a> 
+                            </div>
+                            <div class="nav-item">
+                                <a class="nav-link" href="gal_scapes.html"> Landscapes </a>
+                            </div>
+                            <div class="nav-item">
+                                <a class="nav-link" href="gal_astro.html"> Astro </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="contact.html"> Contact </a>
+                    </div>
+                    <div class="nav-item">
+                        <a class="nav-link" href="about.html"> About </a>
+                    </div>
+                </nav>
+                <div class="header-item" id = "toggleNavbarIcon">
+                    <a href="javascript:void(0);" class="nav-link" onclick="toggleNavbar()">&#9776;</a>
+                </div>
+            </header>
+
+            <main>
+                <section id = "showcase">
+    <div id = "showcaseContainer">
+        <div class = "imgBox sectionPortrait">
+            <div class="sectionInfo">
+                <h3 class="sectionTitle">Portraits</h3>
+            </div>
+            <a class = "overlay" href="gal_portrait.html"></a>
+        </div>
+
+        <div class = "imgBox sectionAstro">
+            <div class="sectionInfo">
+                <h3 class="sectionTitle">Astro</h3>
+            </div>
+            <a class = "overlay" href="gal_astro.html"></a>
+        </div>
+
+        <div class = "imgBox sectionLandscape">
+            <div class="sectionInfo">
+                <h3 class="sectionTitle">Landscapes</h3>
+            </div>
+            <a class = "overlay" href="gal_scapes.html"></a>
+        </div>
+    </div>
+</section>
+            </main>
+
+            <footer>
+                <h3 class="footerText" id="copyText"> &copy; Copyright Alexandru Stanciu 2019 </h3> 
+                <table id = "footerIconList">
+                    <tr>
+                        <td>
+                            <a target="_blank" href="https://www.instagram.com/unsplash/">
+                                <i class="im im-instagram"></i>
+                            </a>
+                        </td>
+                        <td>
+                            <a target="_blank" href="https://github.com/alexsg4/twportfolio">
+                                <i class="im im-github"></i>
+                            </a>
+                        </td>
+                        <td>
+                            <a target="_blank" href="https://laborator-fmi-web.educationhost.cloud/pages/ProiectHML.html">
+                                <i class="im im-code"></i>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+                <h3 class="footerText" id="labText"> Tehnici Web </h3>
+            </footer>
+        </div>
+    </body>
+</html>
